@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+:root {
+    --color-1: #eb233c;
+    --color-2: #eb233a36;
+    --text-color1: white;
+    --text-color2: #dbdfe9;
+    --back: #1c1a32;
+}
+
+body{
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--back);
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: var(--color-1);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    color: var(--text-color1);
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .nav__izquierda .span{
+        color: red;
+    }
+    .nav__list{
+        display: flex;
+    }
+
+    .nav__list li a{
+        color: var(--text-color1);
+        margin-right: 25px;
+        font-weight: 700;
+        transition: .3s all ease-in-out;
+    }
+
+    .nav__list li a:hover{
+      color: var(--color-1);
+    }
+
+
+}
+
+.main{
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color1);
+    .main-information{ 
+     padding: 50px;
+    }
+    
+    .main-title{
+        margin-bottom: 20px;
+    }
+    
+    .btn-resume{
+        width: 100px;
+        height: 50px;
+        border: 2px solid var(--color-1);
+        padding: 10px 10px;
+        color: var(--color-1);
+        background-color: var(--back);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .btn-resume:hover{
+        cursor: pointer;
+        transform: scale(0.95);
+        background-color: var(--color-2);
+    }
+
+}
+
+
+#skills{
+    margin-top: 250px;
+    width: 100%;
+    height: 100vh;
+    color: var(--text-color1);
+    padding: 30px;
+    
+    .skills__title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .skills__tecnologias{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .arriba{
+            margin-bottom: 20px;
+        }
+    }
+
+    .skills__tecnologias img{
+        height: 180px;
+    }
+
+    .skills__tecnologias img:hover{
+        transform: scale(1.1);
+    }
+}
+
+#aboutme{
+    width: 100%;
+    height: 100vh;
+    color: var(--text-color1);
+    text-align: center;
+    padding-top: 20px;
+
+
+   .about__me__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    .izquierda{
+        width: 50%;
+        h2{
+            padding-bottom: 20px;
+        }
+        p{
+            letter-spacing: 1px;
+            
+        }
+    }
+
+    .derecha img{
+        height: 300px;
+        margin-top: 50px;
+        border-radius: 5px;
+        background-color: var(--color-1);
+        box-shadow: 10px 10px 0 0 var(--color-2);
+    }
+   }
+
+}
+
+#projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text-color1);
+    .project__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        .card{
+            width: 500px;
+            h3{
+                color: var(--color-1);
+                letter-spacing: 3px;
+            }
+            img {
+                background-color: #eb233c;
+            }
+        }
+    }
+
+}
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+    color: var(--text-color1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+    .contact__title{
+        font-size: 25px;
+        margin-top: -100px;
+    }
+    .contact__icons{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        .l{
+            display: flex;
+            text-align: center;
+            gap: 10px;
+
+            p{
+                margin-top: 9px;
+            }
+        }
+
+        .l > a {
+            font-size: 35px;
+            color: var(--text-color2);
+        }
+
+        .l > p{
+            font-weight: 600;
+        }
+
+        .l > a:hover{
+            color: #eb233c;
+            transform: scale(1.1);
+        }
+        
+    }
+}
